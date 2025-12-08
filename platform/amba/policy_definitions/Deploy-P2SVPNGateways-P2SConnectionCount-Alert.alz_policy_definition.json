@@ -223,7 +223,7 @@
                             "name": "P2SConnectionCount",
                             "operator": "GreaterThan",
                             "threshold": "[parameters('threshold')]",
-                            "timeAggregation": "Sum"
+                            "timeAggregation": "Total"
                           }
                         ],
                         "odata.type": "Microsoft.Azure.Monitor.SingleResourceMultipleMetricCriteria"
@@ -302,7 +302,7 @@
                 "field": "Microsoft.Insights/metricAlerts/autoMitigate"
               },
               {
-                "equals": "Sum",
+                "equals": "Total",
                 "field": "Microsoft.Insights/metricAlerts/criteria.Microsoft-Azure-Monitor-SingleResourceMultipleMetricCriteria.allOf[*].timeAggregation"
               },
               {
